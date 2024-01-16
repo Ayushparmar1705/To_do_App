@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        marquee{
+            color:red;
+            font-size: large;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        button{
+            background-color:lightcoral;
+            color:black;
+            padding: 0.5em;
+            border:2px solid white;
+            border-radius: 10px;
+            width:100px;
+        
+        }
+        button:hover{
+            background-color:bisque;
+        }
+        input{
+            width:150px;
+            border-radius: 10px;
+            border:2px solid white;
+            border:2px solid whitesmoke;
+            padding: 0.5em;
+            
+        }
+
+        #addtask{
+          
+
+            width:500px;
+            margin: auto;
+            margin-top: 3em;
+        }
+        #main_container{
+           
+            width:100%;
+            height:300px;
+            display: flex;
+            margin-top: 3em;
+            flex-wrap: wrap;
+            
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="container">
+
+        <div id="box1">
+            <marquee  onmouseover="this.stop()" onmouseleave="this.start()">TodoApp</marquee>
+        </div>
+        <div id="addtask">
+                <table id="table">
+                    <tr>
+                       <td> 
+                            <form>
+                                <input  type="text" placeholder="Enter a task here" id="input">
+                            </form>
+                        </td>
+                        <td>
+                            <button>Add Todo</button>
+                        </td>
+                    </tr>
+                    
+                </table>
+                
+               
+        </div>
+        <div id="main_container"></div>
+    </div>
+    <script src="./To_do.js"></script>
+</body>
+</html>
